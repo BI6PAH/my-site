@@ -1,0 +1,28 @@
+# 微信图标说明
+
+这是一个占位文件，因为登录页面需要引用微信图标。
+
+## 获取微信图标
+
+1. 从微信官方品牌资源下载图标：https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Mini_Programs/officialaccount/business/material.html
+
+2. 或者使用在线图标库：
+   - Iconfont: https://www.iconfont.cn/search/index?q=微信
+   - 搜索"微信"或"wechat"图标
+
+3. 图标要求：
+   - 尺寸：48x48 像素
+   - 格式：PNG
+   - 背景：透明
+   - 颜色：白色或绿色（#07C160）
+
+## 使用方法
+
+下载图标后：
+1. 重命名为 `wechat.png`
+2. 放入 `static/images/` 目录
+3. 替换此占位文件
+
+## 临时解决方案
+
+如果不立即使用微信登录功能，可以忽略此文件，应用可以正常编译运行。

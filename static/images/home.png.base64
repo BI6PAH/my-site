@@ -1,0 +1,60 @@
+# 首页图标说明
+
+这是一个占位文件，因为底部导航栏（tabBar）需要首页图标。
+
+## 获取首页图标
+
+建议使用在线图标库：
+
+1. **Iconfont** https://www.iconfont.cn/
+   - 搜索关键词："home", "首页", "房子"
+   - 选择线性或填充风格的图标
+   - 下载 PNG 格式（48x48 像素）
+
+2. **推荐图标**
+   - 未选中状态（home.png）：线性图标，灰色或黑色
+   - 选中状态（home-active.png）：填充图标，使用主色调（#667eea 或 #764ba2）
+
+## 图标规格
+
+- 尺寸：48x48 像素
+- 格式：PNG
+- 背景：透明
+- 风格：一致的线性/填充风格
+
+## 使用方法
+
+下载图标后：
+1. 下载两个版本的图标（线性和填充）
+2. 分别重命名为：
+   - `home.png`（未选中状态）
+   - `home-active.png`（选中状态）
+3. 放入 `static/images/` 目录
+4. 替换这些占位文件
+
+## 临时解决方案
+
+如果不使用底部导航栏，可以修改 `pages.json`，移除或注释掉 `tabBar` 配置：
+
+```json
+// "tabBar": {
+//   ...
+// }
+```
+
+## 当前配置
+
+在 `pages.json` 中配置了底部导航栏，指向这些图标文件：
+
+```json
+"tabBar": {
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "iconPath": "static/images/home.png",
+      "selectedIconPath": "static/images/home-active.png",
+      "text": "首页"
+    }
+  ]
+}
+```

@@ -1,0 +1,36 @@
+# App Logo 说明
+
+由于无法直接生成 PNG 图像文件，这里提供以下两种解决方案：
+
+## 方案一：使用 SVG 文件（推荐）
+
+在 `splash.vue` 和 `index.vue` 中，将：
+```
+image class="app-logo" src="/static/logo/app-logo.png" 
+```
+
+修改为：
+```
+image class="app-logo" src="/static/logo/logo.svg" 
+```
+
+uni-app 支持直接使用 SVG 文件作为图像源。
+
+## 方案二：在线转换 SVG 为 PNG
+
+1. 打开 `D:\Alivn 2.1\static\logo\logo.svg` 文件
+2. 复制 SVG 内容
+3. 访问在线转换工具：https://svgtopng.com/zh/
+4. 粘贴 SVG 内容并转换为 PNG
+5. 将生成的 PNG 文件保存为 `app-logo.png` 到当前目录
+
+## 方案三：使用 HBuilder X 导入
+
+在 HBuilder X 中，右键点击 `logo` 文件夹，选择"新建" -> "图像文件"，然后设计或导入你的 Logo 图像。
+
+## Logo 设计建议
+
+- 尺寸：200x200 像素
+- 格式：PNG 带透明背景
+- 风格：简洁、教育类、适合小学生
+- 颜色：主色调为紫色渐变（#667eea 到 #764ba2）

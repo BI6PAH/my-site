@@ -1,0 +1,46 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="symbolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 主背景 -->
+  <circle cx="100" cy="100" r="100" fill="url(#bgGradient)" />
+  
+  <!-- 内圈装饰 -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+  
+  <!-- 数学符号组合 -->
+  <g transform="translate(100, 100)">
+    <!-- 加号 -->
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="url(#symbolGradient)" stroke-width="8" stroke-linecap="round" />
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="url(#symbolGradient)" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- 减号 -->
+    <line x1="-25" y1="-50" x2="25" y2="-50" stroke="url(#symbolGradient)" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- 乘号（旋转的加号） -->
+    <g transform="rotate(45)">
+      <line x1="-15" y1="0" x2="15" y2="0" stroke="url(#symbolGradient)" stroke-width="5" stroke-linecap="round" />
+      <line x1="0" y1="-15" x2="0" y2="15" stroke="url(#symbolGradient)" stroke-width="5" stroke-linecap="round" />
+    </g>
+    
+    <!-- 除号 -->
+    <line x1="-20" y1="50" x2="20" y2="50" stroke="url(#symbolGradient)" stroke-width="6" stroke-linecap="round" />
+    <circle cx="0" cy="40" r="4" fill="url(#symbolGradient)" />
+    <circle cx="0" cy="60" r="4" fill="url(#symbolGradient)" />
+  </g>
+  
+  <!-- 外圈装饰点 -->
+  <circle cx="50" cy="50" r="6" fill="rgba(255,255,255,0.3)" />
+  <circle cx="150" cy="50" r="6" fill="rgba(255,255,255,0.3)" />
+  <circle cx="50" cy="150" r="6" fill="rgba(255,255,255,0.3)" />
+  <circle cx="150" cy="150" r="6" fill="rgba(255,255,255,0.3)" />
+</svg>

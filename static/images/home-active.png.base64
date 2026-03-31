@@ -1,0 +1,73 @@
+# 首页选中状态图标说明
+
+这是首页图标的选中状态版本，用于底部导航栏（tabBar）。
+
+## 图标要求
+
+- **文件名**：`home-active.png`
+- **尺寸**：48x48 像素
+- **格式**：PNG
+- **背景**：透明
+- **风格**：填充图标（与未选中状态的线性图标对应）
+- **颜色**：使用应用主色调（紫色渐变 #667eea 到 #764ba2）
+
+## 如何获取
+
+1. 在与 `home.png` 相同的图标库中下载
+2. 选择同一图标的"填充"或"实心"版本
+3. 或者下载后自行填充颜色
+
+## 快速解决方案
+
+如果暂时不想处理图标，有两种替代方案：
+
+### 方案一：移除底部导航栏（推荐）
+
+修改 `pages.json`，注释或删除 `tabBar` 配置：
+
+```json
+// "tabBar": {
+//   "color": "#7A7E83",
+//   "selectedColor": "#2C3E50",
+//   "borderStyle": "black",
+//   "backgroundColor": "#ffffff",
+//   "list": [
+//     {
+//       "pagePath": "pages/index/index",
+//       "iconPath": "static/images/home.png",
+//       "selectedIconPath": "static/images/home-active.png",
+//       "text": "首页"
+//     }
+//   ]
+// }
+```
+
+### 方案二：使用文字代替图标
+
+修改 `pages.json` 中的 tabBar 配置，移除图标配置，只保留文字：
+
+```json
+"tabBar": {
+  "color": "#7A7E83",
+  "selectedColor": "#2C3E50",
+  "borderStyle": "black",
+  "backgroundColor": "#ffffff",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }
+  ]
+}
+```
+
+## 图标设计建议
+
+- 与未选中状态（home.png）的图标保持一致的风格
+- 使用应用的主色调，增强品牌一致性
+- 确保在浅色背景下清晰可见
+- 避免过于复杂的细节，保持简洁
+
+## 当前状态
+
+本文件是占位符，需要替换为实际的图标文件才能显示。
