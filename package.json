@@ -1,0 +1,36 @@
+{
+  "name": "alvin-math-h5",
+  "version": "1.0.0",
+  "description": "小学生数学题智能生成工具 - H5版本",
+  "main": "main.js",
+  "scripts": {
+    "dev:h5": "uni",
+    "build:h5": "uni build",
+    "deploy": "gh-pages -d dist/build/h5"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^2.0.0",
+    "@dcloudio/uni-app-plus": "^2.0.0",
+    "@dcloudio/uni-h5": "^2.0.0",
+    "@dcloudio/uni-mp-weixin": "^2.0.0",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^2.0.0",
+    "@dcloudio/uni-automator": "^2.0.0",
+    "@dcloudio/uni-cli-shared": "^2.0.0",
+    "@dcloudio/uni-migration": "^2.0.0",
+    "@dcloudio/uni-template-compiler": "^2.0.0",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-plugin-import": "^1.11.0",
+    "cross-env": "^7.0.2",
+    "gh-pages": "^6.3.0",
+    "postcss-comment": "^2.0.0",
+    "typescript": "^3.9.10"
+  },
+  "uni-app": {
+    "scripts": {}
+  }
+}
