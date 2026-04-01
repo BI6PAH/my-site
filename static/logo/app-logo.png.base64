@@ -1,4 +1,4 @@
-# App Logo 说明
+﻿# App Logo 说明
 
 由于无法直接生成 PNG 图像文件，这里提供以下两种解决方案：
 
@@ -6,12 +6,12 @@
 
 在 `splash.vue` 和 `index.vue` 中，将：
 ```
-image class="app-logo" src="/static/logo/app-logo.png" 
+image class="app-logo" src="/my-site/static/logo/app-logo.png" 
 ```
 
 修改为：
 ```
-image class="app-logo" src="/static/logo/logo.svg" 
+image class="app-logo" src="/my-site/static/logo/logo.svg" 
 ```
 
 uni-app 支持直接使用 SVG 文件作为图像源。
